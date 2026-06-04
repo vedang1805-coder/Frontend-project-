@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #00000038;
+}
+
+/* .......................Start Nav Bar...................... */
+
+.nav-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.logo{
+    
+    padding:10px;
+    font-size: 25px;
+    color: #222; 
+    opacity: 0;
+    animation: logoAni 1s ease forwards;   
+}
+
+.nav-link{
+    margin-left:20%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link a{
+    margin-right: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #5e5d5d;
+    font-size: 20px;
+    transition: .4s ease;
+    display: inline-block;    
+    padding:10px 10px 10px 10px;
+    position: relative;
+}
+
+.nav-link a.act{
+    color:black;
+    animation: NavliaAni forwards .5s ease;
+    animation-delay: 0.2s;
+    opacity: 0;
+    font-weight: bold;
+}
+.nav-link a.li2{
+    animation: NavliaAni forwards .5s ease;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+.nav-link a.li3{
+    animation: NavliaAni forwards .5s ease;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+.nav-link a.li4{
+    animation: NavliaAni forwards .5s ease;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+.nav-link a.li5{
+    animation: NavliaAni forwards .5s ease;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.underline{
+    margin-top: 5px;
+    display: block;
+    height: 4px;
+    background: rgb(0, 0, 0);
+    width: 0;
+    transition: width 0.3s ease;
+}
+.act:hover .underline, .li2:hover .underline, .li3:hover .underline, .li4:hover .underline, .li5:hover .underline {
+    width: 100%;
+}
+
+.nav-link a:hover{
+    color: #000000;
+    background-color:#0000001c;
+}
+
+/* .......................End Nav Bar...................... */
+
+
+/* .......................Start Header...................... */
+header{
+    margin: auto;
+    margin-top: 50px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-container{
+    border-radius: 50px;
+    background-color: #333;
+    width: 100%;
+}
+
+.header-left{
+    width: 50%;
+}
+
+.header-left h1{
+    margin: 30px 0px 20px 45px;
+    font-size: 54px;
+    line-height: 1.2;
+    color: #ffffff;
+    animation: H1Ani forwards 0.8s ease;  
+    opacity: 0;    
+    animation-delay: 1s;  
+}
+
+.header-left h3{
+    margin: 30px 0px 20px 45px;
+    font-size: 38px;
+    color: #ffffff;
+    animation: H1Ani forwards 0.8s ease;  
+    opacity: 0;    
+    animation-delay: 1.4s;  
+}
+
+.header-left p{
+    color: #ffffff;
+    margin: 29px 0px 20px 45px;
+    line-height: 1.5;
+    font-size: 24px;
+    animation: H1Ani forwards 0.8s ease;  
+    opacity: 0;    
+    animation-delay: 1.8s; 
+}
+
+.btn{
+    margin: 20px 0px 50px 45px;
+    display: inline-block;
+    padding: 12px 28px;
+    background: #1743e3;
+    border: 2px solid #1743e3;
+    border-radius: 9px;
+    color: #eaeaea;
+    transition: .4s ease;
+    opacity: 0;
+    animation: logoAni 1s ease forwards; 
+    animation-delay: 2.2s;
+}
+.btn:hover{
+    background-color:transparent;
+}
+
+.sq-box img{
+    position: absolute;
+    left:8px;
+    top:-390px;
+    width: 700px;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    animation: carAni forwards 0.7s ease;
+    animation-delay: 2s;
+}
+.sq-box{
+    transform:scaleX(-1); /*To mirror the image*/
+}
+
+
+/* .......................End Header Section...................... */
+/* .......................Animation Start...................... */
+@keyframes logoAni {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }    
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }    
+}
+@keyframes NavliaAni {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }    
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }    
+}
+@keyframes socialAni {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }    
+    100%{
+        transform: translateX(0) ;
+        opacity: 1;
+    }    
+}
+@keyframes H1Ani {
+    0%{
+        transform: translateY(100px) ;
+        opacity: 0;
+    }    
+    100%{
+        transform: translateY(0) ;
+        opacity: 1;
+    }    
+}
+
+@keyframes carAni {
+    0%{
+        transform: translate(0, 180px) scale(0) ;
+        opacity: 0;
+    }    
+    100%{
+        transform: translate(0, 0) scale(1) ;
+        opacity: 1;
+    }    
+}
+
+
+/* .......................End Animation...................... */
+
+
+.inventory{  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#333;
+    border-radius: 50px;
+    width: 95%;
+    margin:200px auto;
+    align-items: center;
+}
+.inventory h1{
+    color: white;
+    margin: -90px 0px 20px 45px;
+    padding-top: 50px;
+    text-align: center;
+}
+.marq{
+    width: 100px;
+    margin-right:70px;
+    margin-bottom: 50px ;
+}
+
+.gallery-section{ 
+    padding: 50px 0;
+    background-color: #333;
+    border-radius: 0 0 50px 50px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 37px;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+}
+
+.car-info {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #eee;
+}
+
+.car-info h3 {
+    margin: -5px 0 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.car-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.rent_btn {
+    margin-top: 10px;
+    background-color: white;
+    color: #0022ff; 
+    padding: 5px 20px;
+    border: 2px solid #0022ff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rent_btn:hover {
+    background-color: #0022ff; 
+    color: white;
+}
+footer {
+    width: 95%;
+    margin:-90px auto 40px auto;
+    border-radius:50px ;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.footer-section {
+    padding: 20px;
+}
+
+.footer-section h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    margin-left: 30px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-left: 70px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer-section a {
+    color: #b7b7b7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-section .download{
+    width: 200px;
+    height: 57px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.footer-section img {
+    width: 35px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}

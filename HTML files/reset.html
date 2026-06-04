@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reset Password</title>
+    <link rel="stylesheet" type="text/css" href="../CSS files/others.css">
+</head>
+
+<body>
+    <div class="container1">
+        <div class="reset">
+            <h1>Reset Password</h1>
+            <input type="text" placeholder="Enter your Mobile number" class="num" id="num"><br>
+            <span id="numError" class="error"></span><br>
+            <input type="text" placeholder="Enter OTP sent to your Mobile number" class="num" id="otp"><br>
+            <span id="otpError" class="error"></span><br>
+            <input type="password" placeholder="Reset your password" class="pass" id="password"><br>
+            <span id="passError" class="error"></span><br>
+            <input type="password" placeholder="Confirm your password" class="pass" id="cPassword"><br>
+            <span id="cPassError" class="error"></span><br>
+            <a><button class="submit_btn" onclick="return validateInput()">Submit</button></a><br><br>
+        </div>
+    </div>
+	<script src="../JavaScript files/reset.js"></script>
+</body>
+
+</html>

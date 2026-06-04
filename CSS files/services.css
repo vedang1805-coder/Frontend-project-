@@ -1,0 +1,208 @@
+body {
+    background-color: #0000001c;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* .......................Start Nav Bar......................*/
+
+.nav-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo {
+
+    padding: 10px;
+    font-size: 25px;
+    color: #222222db;
+}
+
+.nav-link {
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link a {
+    margin-right: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #5e5d5d;
+    font-size: 20px;
+    transition: .4s ease;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+}
+
+.nav-link a.li3 {
+    color: black;
+    font-weight: bold;
+}
+
+.underline {
+    margin-top: 5px;
+    display: block;
+    height: 4px;
+    background: rgb(0, 0, 0);
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.act:hover .underline, .li2:hover .underline, .li3:hover .underline, .li4:hover .underline, .li5:hover .underline {
+    width: 100%;
+}
+
+.nav-link a:hover {
+    color: #000000;
+    background-color: #0000001c;
+}
+
+/* .......................End Nav Bar...................... */
+
+.main {
+    background-color: #333;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    width: 95%;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+/* Header Styles */
+
+header {
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* Services Section Styles */
+
+.service-container {
+    margin: 50px auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.service-card {
+    padding: 20px 20px;
+    margin: 30px;
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    background-color: #ffffff;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
+}
+
+.service-card:hover .service-title,
+.service-card:hover .service-description {
+    color: #000000;
+}
+
+/* Reviews Section */
+.reviews-section {
+    margin: -20px 100px;
+    padding: 60px;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.reviews-section p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.review-card .reviewer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review-card .reviewer img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review-card .reviewer h4 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.review-card .review-text {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.review-card .rating {
+    margin-top: -30px;
+    color: #ffc107;
+    font-size: 20px;
+}

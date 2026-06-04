@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" type="text/css" href="../CSS files/others.css">
+</head>
+
+<body>
+    <div class="container1">
+        <div class="signup">
+            <h1>Signup</h1>
+            <input type="text" placeholder="Enter your full name" class="name" id="name"><br>
+            <span id="nameError" class="error"></span><br>
+            <input type="text" placeholder="Enter your Mobile number" class="num" id="num"><br>
+            <span id="numError" class="error"></span><br>
+            <input type="email" placeholder="Enter your email" class="email" id="email"><br>
+            <span id="emailError" class="error"></span><br>
+            <input type="password" placeholder="Create a password" class="pass" id="password"><br>
+            <span id="passError" class="error"></span><br>
+            <input type="password" placeholder="Confirm your password" class="pass" id="cPassword"><br>
+            <span id="cPassError" class="error"></span><br>
+            <input type="checkbox" class="checkbox">
+            <p class="info">Keep Signed In</p>
+            <a><button class="signup_btn" onclick="return validateInput()">Signup</button></a><br><br>
+            <p style="font-size:17px;">
+                <center>
+                    Already have an account?<a href="login.html" class="jump" target="_blank"> Login</a>
+                </center>
+            </p>
+        </div>
+    </div>
+	<script src="../JavaScript files/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="../CSS files/others.css">
+</head>
+
+<body>
+    <div class="container1">
+        <div class="login">
+            <h1>Login</h1>
+            <input type="text" placeholder="Enter your Mobile number" class="num" id="num"><br>
+            <span id="numError" class="error"></span><br>
+            <input type="password" placeholder="Enter your password" class="pass" id="password"><br>
+            <span id="passError" class="error"></span><br>
+            <input type="checkbox" class="checkbox">
+            <p class="info">Save Login Info</p>
+            <p><a href="reset.html" class="f_p">forgot password?</a></p><br>
+            <a><button class="login-btn" onclick="return validateInput()">Login</button></a><br><br>
+            <p style="font-size:17px; ">
+                <center>
+                    Don't have an account?<a href="signup.html" class="jump" target="_blank"> signup </a>
+                </center>
+            </p><br>
+        </div>
+    </div>
+	<script src="../JavaScript files/login.js"></script>
+</body>
+
+</html>
